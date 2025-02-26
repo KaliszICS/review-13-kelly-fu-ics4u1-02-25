@@ -24,8 +24,24 @@ public class PracticeProblem {
 	}	
 
 	//3
-	public static 
+	public static HashMap<String, Integer> combineParallelArrays(String[] names, int[] ages){
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		for (int i = 0; i < names.length; i++){
+			map.put(names[i],ages[i]);
+		}
+		return map;
+	}
 
 
+	//4
+	public static HashMap<String, Integer> increaseAge(HashMap<String, Integer> map2, String naME){
+			if (map2.containsKey(naME)){
+			map2.put(naME, map2.get(naME)+1);
 
+			}
+			return map2;
+		}
+	
+	
 }
+	
